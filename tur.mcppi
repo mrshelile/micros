@@ -16,7 +16,7 @@ Value=0
 [EEPROM_DEFINITION]
 Value=
 [FILES]
-File0=keypad2.c
+File0=tur.c
 Count=1
 [BINARIES]
 Count=0
@@ -24,8 +24,7 @@ Count=0
 Count=0
 ActiveImageIndex=-1
 [OPENED_FILES]
-File0=keypad2.c
-Count=1
+Count=0
 [EEPROM]
 Count=0
 [ACTIVE_COMMENTS_FILES]
@@ -45,7 +44,7 @@ File0=Lcd
 File1=Lcd_Constants
 Count=2
 [EXPANDED_NODES]
-0=keypad2.mcppi
+0=tur.mcppi
 Count=1
 [LIB_EXPANDED_NODES]
 0=mikroE Libraries

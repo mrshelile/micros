@@ -15,11 +15,7 @@ sbit LCD_D5_Direction at TRISD1_bit;
 sbit LCD_D6_Direction at TRISD2_bit;
 sbit LCD_D7_Direction at TRISD3_bit;
 // End LCD module connections
-
-
 void main() {
-
-
   ANSEL  = 0;                              // Configure AN pins as digital I/O
   ANSELH = 0;
 
@@ -30,73 +26,32 @@ void main() {
   Lcd_Cmd(_LCD_CLEAR);                     // Clear display
   Lcd_Cmd(_LCD_CURSOR_OFF);                // Cursor off
   Lcd_Out(1, 1, ":");
-
+  
   while(1){
+   // column one
+   PORTB.RB0=1;
 
-PORTB.RB0=1;
-
- if(PORTB.RB4 == 1)
+   if(PORTB.RB4 == 1)   // test row 1
  {
     LCD_OUT(1,1,"1");
  }
-
-
-   if(PORTB.RB5 == 1)
+   if(PORTB.RB5 == 1)   // test row 2
 
  {
 
-   LCD_OUT(1,1,"4");  }
+   LCD_OUT(1,1,"4");
+   }
 
-   if(PORTB.RB6 == 1)
+
+    PORTB.RB0=0;
+
+    // column 2
+    PORTB.RB1=1;
+     if(PORTB.RB4 == 1)    // test row 2
  {
-   LCD_OUT(1,1,"7");
-
-
-   }
-
-   PORTB.RB0=0;
-
-
- PORTB.RB1=1;
- if(PORTB.RB4 == 1){
-       LCD_OUT(1,1,"2");
-   }
-
- if(PORTB.RB5 == 1){
-
-  LCD_OUT(1,1,"5");}
-
-
- if(PORTB.RB6 == 1){
-
-      LCD_OUT(1,1,"8");
-      }
-
-  if(PORTB.RB7 == 1){
-
-   LCD_OUT(1,1,"0"); }
-
- PORTB.RB1=0;
-
-
- PORTB.RB2=1;
- if(PORTB.RB4 == 1){
-
-       LCD_OUT(1,1,"3");
-      }
- if(PORTB.RB5 == 1){
-
-    LCD_OUT(1,1,"6");
-    }
-
- if(PORTB.RB6 == 1){
-
-
-      LCD_OUT(1,1,"9");
-      }
-
- PORTB.RB2=0;
+    LCD_OUT(1,1,"2");
+ }
+  PORTB.RB1=-0;
 
   }
-
 }

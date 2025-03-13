@@ -1,11 +1,11 @@
 0	1	mikroCPIC1618.exe -MSF -DBG -pP16F887 -DL -O11111114 -fo8 -N"C:\Users\Administrator\Documents\micros\keypad2.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Administrator\Documents\micros\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" "keypad2.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl"	 
 hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
 diagnostics: 0	122	Compilation Started	keypad2.c
-diagnostics: 104	123	Compiled Successfully	keypad2.c
-diagnostics: 0	127	All files Compiled in 250 ms	 
-hint: 0	1144	Used RAM (bytes): 46 (13%)  Free RAM (bytes): 306 (87%)	Used RAM (bytes): 46 (13%)  Free RAM (bytes): 306 (87%)
+diagnostics: 102	123	Compiled Successfully	keypad2.c
+diagnostics: 0	127	All files Compiled in 328 ms	 
+hint: 0	1144	Used RAM (bytes): 30 (9%)  Free RAM (bytes): 322 (91%)	Used RAM (bytes): 30 (9%)  Free RAM (bytes): 322 (91%)
 hint: 0	1144	Used ROM (program words): 412 (5%)  Free ROM (program words): 7780 (95%)	Used ROM (program words): 412 (5%)  Free ROM (program words): 7780 (95%)
 diagnostics: 0	125	Project Linked Successfully	keypad2.mcppi
-diagnostics: 0	128	Linked in 125 ms	 
-diagnostics: 0	129	Project 'keypad2.mcppi' completed: 438 ms	 
-diagnostics: 0	103	Finished successfully: 11 Mar 2025, 10:50:00	keypad2.mcppi
+diagnostics: 0	128	Linked in 47 ms	 
+diagnostics: 0	129	Project 'keypad2.mcppi' completed: 422 ms	 
+diagnostics: 0	103	Finished successfully: 13 Mar 2025, 02:08:31	keypad2.mcppi

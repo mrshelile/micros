@@ -1,4 +1,4 @@
-#line 1 "C:/Users/Administrator/Documents/micros/keypad2.c"
+#line 1 "C:/Users/Administrator/Documents/micros/tur.c"
 char txt[6];
 
 
@@ -16,11 +16,7 @@ sbit LCD_D5_Direction at TRISD1_bit;
 sbit LCD_D6_Direction at TRISD2_bit;
 sbit LCD_D7_Direction at TRISD3_bit;
 
-
-
 void main() {
-
-
  ANSEL = 0;
  ANSELH = 0;
 
@@ -34,70 +30,29 @@ void main() {
 
  while(1){
 
-PORTB.RB0=1;
+ PORTB.RB0=1;
 
  if(PORTB.RB4 == 1)
  {
  LCD_OUT(1,1,"1");
  }
-
-
  if(PORTB.RB5 == 1)
 
  {
 
- LCD_OUT(1,1,"4"); }
-
- if(PORTB.RB6 == 1)
- {
- LCD_OUT(1,1,"7");
-
-
+ LCD_OUT(1,1,"4");
  }
+
 
  PORTB.RB0=0;
 
 
  PORTB.RB1=1;
- if(PORTB.RB4 == 1){
+ if(PORTB.RB4 == 1)
+ {
  LCD_OUT(1,1,"2");
  }
-
- if(PORTB.RB5 == 1){
-
- LCD_OUT(1,1,"5");}
-
-
- if(PORTB.RB6 == 1){
-
- LCD_OUT(1,1,"8");
- }
-
- if(PORTB.RB7 == 1){
-
- LCD_OUT(1,1,"0"); }
-
- PORTB.RB1=0;
-
-
- PORTB.RB2=1;
- if(PORTB.RB4 == 1){
-
- LCD_OUT(1,1,"3");
- }
- if(PORTB.RB5 == 1){
-
- LCD_OUT(1,1,"6");
- }
-
- if(PORTB.RB6 == 1){
-
-
- LCD_OUT(1,1,"9");
- }
-
- PORTB.RB2=0;
+ PORTB.RB1=-0;
 
  }
-
 }
